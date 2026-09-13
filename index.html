@@ -2,383 +2,70 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Future Home Fix | Home Services in Lahore</title>
-
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Future Home Fix | Home Services Lahore</title>
 <meta name="description" content="Future Home Fix provides electrician, plumber, AC, solar, EV charger and home maintenance services in Lahore.">
 
-<meta name="theme-color" content="#0b5cff">
-
 <style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:Arial,Helvetica,sans-serif;
-}
-
-html{
-  scroll-behavior:smooth;
-}
-
-body{
-  background:#f5f8fc;
-  color:#172033;
-  line-height:1.6;
-}
-
-header{
-  position:sticky;
-  top:0;
-  z-index:1000;
-  background:#ffffff;
-  border-bottom:1px solid #e7edf5;
-}
-
-.nav{
-  max-width:1150px;
-  margin:auto;
-  padding:16px 20px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-}
-
-.logo{
-  font-size:22px;
-  font-weight:800;
-  color:#0b5cff;
-}
-
-.logo span{
-  color:#111827;
-}
-
-.nav a{
-  text-decoration:none;
-  color:#172033;
-  font-weight:600;
-}
-
-.hero{
-  background:
-    radial-gradient(circle at top right,#4f8cff 0,#1459df 35%,#071c49 100%);
-  color:white;
-  padding:75px 20px 65px;
-}
-
-.hero-inner{
-  max-width:1150px;
-  margin:auto;
-  display:grid;
-  grid-template-columns:1.3fr .7fr;
-  gap:40px;
-  align-items:center;
-}
-
-.badge{
-  display:inline-block;
-  background:rgba(255,255,255,.14);
-  border:1px solid rgba(255,255,255,.25);
-  padding:8px 14px;
-  border-radius:30px;
-  margin-bottom:18px;
-  font-size:14px;
-}
-
-.hero h1{
-  font-size:48px;
-  line-height:1.1;
-  margin-bottom:18px;
-}
-
-.hero p{
-  font-size:18px;
-  color:#e4edff;
-  max-width:650px;
-  margin-bottom:28px;
-}
-
-.buttons{
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
-}
-
-.btn{
-  display:inline-block;
-  text-decoration:none;
-  padding:13px 21px;
-  border-radius:10px;
-  font-weight:700;
-  border:0;
-  cursor:pointer;
-}
-
-.btn-primary{
-  background:white;
-  color:#0758df;
-}
-
-.btn-green{
-  background:#20c66b;
-  color:white;
-}
-
-.hero-card{
-  background:white;
-  color:#172033;
-  border-radius:22px;
-  padding:25px;
-  box-shadow:0 20px 50px rgba(0,0,0,.18);
-}
-
-.hero-card h3{
-  margin-bottom:16px;
-  font-size:21px;
-}
-
-.hero-card label{
-  display:block;
-  font-size:13px;
-  font-weight:700;
-  margin:12px 0 6px;
-}
-
-select,input{
-  width:100%;
-  padding:13px;
-  border:1px solid #dce3ed;
-  border-radius:9px;
-  background:#fff;
-  font-size:15px;
-}
-
-.hero-card button{
-  width:100%;
-  margin-top:16px;
-}
-
-.section{
-  max-width:1150px;
-  margin:auto;
-  padding:65px 20px;
-}
-
-.section-title{
-  text-align:center;
-  margin-bottom:35px;
-}
-
-.section-title h2{
-  font-size:34px;
-  margin-bottom:8px;
-}
-
-.section-title p{
-  color:#657084;
-}
-
-.services{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-}
-
-.service{
-  background:white;
-  padding:25px;
-  border-radius:17px;
-  border:1px solid #e6ebf2;
-  transition:.25s;
-}
-
-.service:hover{
-  transform:translateY(-5px);
-  box-shadow:0 12px 30px rgba(18,50,90,.10);
-}
-
-.icon{
-  width:52px;
-  height:52px;
-  border-radius:14px;
-  background:#eaf2ff;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:25px;
-  margin-bottom:16px;
-}
-
-.service h3{
-  margin-bottom:7px;
-}
-
-.service p{
-  color:#667085;
-  font-size:14px;
-}
-
-.area-box{
-  background:#071c49;
-  color:white;
-  border-radius:24px;
-  padding:45px 30px;
-  text-align:center;
-}
-
-.area-box h2{
-  font-size:32px;
-  margin-bottom:10px;
-}
-
-.area-box p{
-  color:#d9e5ff;
-  margin-bottom:25px;
-}
-
-.phases{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:10px;
-}
-
-.phase{
-  background:rgba(255,255,255,.1);
-  border:1px solid rgba(255,255,255,.18);
-  padding:9px 15px;
-  border-radius:30px;
-}
-
-.steps{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-}
-
-.step{
-  background:white;
-  padding:25px;
-  border-radius:16px;
-  text-align:center;
-  border:1px solid #e6ebf2;
-}
-
-.number{
-  width:45px;
-  height:45px;
-  margin:0 auto 15px;
-  border-radius:50%;
-  background:#0b5cff;
-  color:white;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:800;
-}
-
-.cta{
-  background:linear-gradient(135deg,#0b5cff,#09378d);
-  color:white;
-  text-align:center;
-  padding:55px 20px;
-}
-
-.cta h2{
-  font-size:34px;
-  margin-bottom:10px;
-}
-
-.cta p{
-  margin-bottom:22px;
-  color:#dbe7ff;
-}
-
-footer{
-  background:#071326;
-  color:#b9c4d5;
-  padding:30px 20px;
-  text-align:center;
-}
-
-footer strong{
-  color:white;
-}
-
-.whatsapp-float{
-  position:fixed;
-  right:18px;
-  bottom:18px;
-  width:58px;
-  height:58px;
-  border-radius:50%;
-  background:#20c66b;
-  color:white;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-decoration:none;
-  font-size:27px;
-  box-shadow:0 8px 25px rgba(0,0,0,.2);
-  z-index:2000;
-}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#f5f8fc;color:#172033;line-height:1.6}
+header{background:#fff;border-bottom:1px solid #e6ebf2;position:sticky;top:0;z-index:99}
+.nav{max-width:1150px;margin:auto;padding:13px 20px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:#0a3b91;font-weight:800;font-size:21px}
+.logo-icon{width:44px;height:40px;background:linear-gradient(135deg,#0867ed,#0b3c91);clip-path:polygon(50% 0,100% 38%,88% 38%,88% 100%,12% 100%,12% 38%,0 38%);position:relative}
+.logo-icon:after{content:"⚡";position:absolute;color:#ff9d00;font-size:19px;left:13px;top:12px}
+.nav a:last-child{color:#0867ed;text-decoration:none;font-weight:bold}
+.hero{background:linear-gradient(135deg,#061b45,#0b5de8);color:#fff;padding:70px 20px}
+.hero-inner{max-width:1150px;margin:auto;display:grid;grid-template-columns:1.2fr .8fr;gap:45px;align-items:center}
+.badge{display:inline-block;padding:7px 14px;border:1px solid #ffffff40;background:#ffffff15;border-radius:30px;margin-bottom:18px;font-size:14px}
+h1{font-size:50px;line-height:1.08;margin-bottom:18px}
+.hero p{font-size:18px;color:#dce8ff;max-width:650px;margin-bottom:28px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;border:0;border-radius:10px;padding:13px 20px;font-weight:bold;text-decoration:none;cursor:pointer}
+.primary{background:#fff;color:#075bdd}
+.green{background:#20c66b;color:#fff}
+.card{background:#fff;color:#172033;border-radius:22px;padding:26px;box-shadow:0 20px 50px #00194b55}
+.card h2{margin-bottom:16px}
+label{display:block;font-size:13px;font-weight:bold;margin:12px 0 6px}
+select,input{width:100%;padding:13px;border:1px solid #dce3ed;border-radius:9px;font-size:15px}
+.card button{width:100%;margin-top:17px}
+.section{max-width:1150px;margin:auto;padding:65px 20px}
+.title{text-align:center;margin-bottom:35px}
+.title h2{font-size:34px;margin-bottom:7px}
+.title p{color:#68758a}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.service{background:#fff;border:1px solid #e5eaf1;border-radius:17px;padding:25px;transition:.25s}
+.service:hover{transform:translateY(-5px);box-shadow:0 15px 35px #12345a12}
+.icon{font-size:28px;width:55px;height:55px;border-radius:15px;background:#eaf2ff;display:flex;align-items:center;justify-content:center;margin-bottom:15px}
+.service h3{margin-bottom:7px}
+.service p{font-size:14px;color:#68758a}
+.area{background:#071b43;color:#fff;border-radius:23px;padding:45px 25px;text-align:center}
+.area h2{font-size:32px;margin-bottom:8px}
+.area p{color:#d7e4ff;margin-bottom:23px}
+.phases{display:flex;justify-content:center;flex-wrap:wrap;gap:9px}
+.phase{padding:8px 14px;background:#ffffff12;border:1px solid #ffffff25;border-radius:30px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.step{background:#fff;padding:25px;border-radius:17px;text-align:center;border:1px solid #e5eaf1}
+.num{margin:auto auto 14px;width:45px;height:45px;border-radius:50%;background:#0867ed;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:bold}
+.cta{background:linear-gradient(135deg,#075bdd,#092e78);color:#fff;text-align:center;padding:55px 20px}
+.cta h2{font-size:34px;margin-bottom:8px}
+.cta p{color:#dce8ff;margin-bottom:22px}
+footer{background:#061326;color:#aebbd0;text-align:center;padding:28px 15px}
+footer strong{color:#fff}
+.float{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:#20c66b;color:#fff;text-decoration:none;display:flex;align-items:center;justify-content:center;font-size:27px;box-shadow:0 8px 25px #0003;z-index:100}
 
 @media(max-width:850px){
-  .hero-inner{
-    grid-template-columns:1fr;
-  }
-
-  .hero h1{
-    font-size:38px;
-  }
-
-  .services{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .steps{
-    grid-template-columns:1fr;
-  }
+.hero-inner{grid-template-columns:1fr}
+h1{font-size:40px}
+.services{grid-template-columns:repeat(2,1fr)}
+.steps{grid-template-columns:1fr}
 }
-
 @media(max-width:600px){
-  .nav{
-    padding:13px 15px;
-  }
-
-  .logo{
-    font-size:19px;
-  }
-
-  .hero{
-    padding:50px 16px;
-  }
-
-  .hero h1{
-    font-size:34px;
-  }
-
-  .hero p{
-    font-size:16px;
-  }
-
-  .section{
-    padding:48px 16px;
-  }
-
-  .section-title h2{
-    font-size:28px;
-  }
-
-  .services{
-    grid-template-columns:1fr;
-  }
-
-  .area-box{
-    padding:35px 20px;
-  }
+.hero{padding:50px 16px}
+h1{font-size:34px}
+.section{padding:48px 16px}
+.services{grid-template-columns:1fr}
+.title h2{font-size:28px}
 }
 </style>
 </head>
@@ -386,253 +73,207 @@ footer strong{
 <body>
 
 <header>
-  <div class="nav">
-    <a href="#" class="logo">Future <span>Home Fix</span></a>
-    <a href="#services">Services</a>
-  </div>
+<div class="nav">
+<a href="#" class="logo">
+<span class="logo-icon"></span>
+<span>Future Home Fix</span>
+</a>
+<a href="#services">Services</a>
+</div>
 </header>
 
 <section class="hero">
-  <div class="hero-inner">
+<div class="hero-inner">
 
-    <div>
-      <div class="badge">🏠 Home Services in Lahore</div>
+<div>
+<div class="badge">🏠 Home Services • Lahore</div>
+<h1>Your Home.<br>Our Priority.</h1>
+<p>
+Reliable home services for electrical, plumbing, AC, solar,
+EV charger installation and general home maintenance.
+</p>
 
-      <h1>Reliable Home Services At Your Doorstep</h1>
+<div class="buttons">
+<a class="btn primary" href="#request">Request a Service</a>
+<a class="btn green" href="https://wa.me/92XXXXXXXXXX" target="_blank">WhatsApp</a>
+</div>
+</div>
 
-      <p>
-        Electrician, plumber, AC, solar, EV charger and home maintenance
-        services for homes and businesses in Lahore.
-      </p>
+<div class="card" id="request">
+<h2>Request a Service</h2>
 
-      <div class="buttons">
-        <a class="btn btn-primary" href="#booking">Book a Service</a>
+<label>Your Area</label>
+<select id="areaSelect">
+<option value="">Select DHA Phase</option>
+<option>DHA Phase 1</option>
+<option>DHA Phase 2</option>
+<option>DHA Phase 3</option>
+<option>DHA Phase 4</option>
+<option>DHA Phase 5</option>
+<option>DHA Phase 6</option>
+<option>DHA Phase 7</option>
+<option>DHA Phase 8</option>
+<option>DHA Phase 9</option>
+</select>
 
-        <a class="btn btn-green"
-           href="https://wa.me/92XXXXXXXXXX"
-           target="_blank">
-          WhatsApp
-        </a>
-      </div>
-    </div>
+<label>Service Needed</label>
+<select id="serviceSelect">
+<option value="">Select Service</option>
+<option>Electrician</option>
+<option>Plumber</option>
+<option>AC Technician</option>
+<option>Solar Technician</option>
+<option>EV Charger Installation</option>
+<option>Home Maintenance</option>
+</select>
 
-    <div class="hero-card" id="booking">
+<label>Your Name</label>
+<input id="customerName" placeholder="Enter your name">
 
-      <h3>Request a Service</h3>
+<button class="btn green" onclick="sendWhatsApp()">
+Send Request on WhatsApp
+</button>
+</div>
 
-      <label>Select Area</label>
-      <select id="phase">
-        <option value="">Choose DHA Phase</option>
-        <option>DHA Phase 1</option>
-        <option>DHA Phase 2</option>
-        <option>DHA Phase 3</option>
-        <option>DHA Phase 4</option>
-        <option>DHA Phase 5</option>
-        <option>DHA Phase 6</option>
-        <option>DHA Phase 7</option>
-        <option>DHA Phase 8</option>
-        <option>DHA Phase 9</option>
-      </select>
-
-      <label>Select Service</label>
-      <select id="service">
-        <option value="">Choose Service</option>
-        <option>Electrician</option>
-        <option>Plumber</option>
-        <option>AC Technician</option>
-        <option>Solar Technician</option>
-        <option>EV Charger Installation</option>
-        <option>Home Maintenance</option>
-      </select>
-
-      <label>Your Name</label>
-      <input id="name" type="text" placeholder="Enter your name">
-
-      <button class="btn btn-green" onclick="sendRequest()">
-        Send Request on WhatsApp
-      </button>
-
-    </div>
-
-  </div>
+</div>
 </section>
 
 <section class="section" id="services">
 
-  <div class="section-title">
-    <h2>Our Services</h2>
-    <p>Professional solutions for your home and property.</p>
-  </div>
+<div class="title">
+<h2>Our Services</h2>
+<p>One place for your essential home service needs.</p>
+</div>
 
-  <div class="services">
+<div class="services">
 
-    <div class="service">
-      <div class="icon">⚡</div>
-      <h3>Electrician</h3>
-      <p>Electrical installation, repair, switches, breakers and wiring work.</p>
-    </div>
+<div class="service">
+<div class="icon">⚡</div>
+<h3>Electrician</h3>
+<p>Electrical wiring, switches, breakers, installation and repair.</p>
+</div>
 
-    <div class="service">
-      <div class="icon">🔧</div>
-      <h3>Plumber</h3>
-      <p>Plumbing repair, leakage, fittings and general plumbing services.</p>
-    </div>
+<div class="service">
+<div class="icon">🔧</div>
+<h3>Plumber</h3>
+<p>Plumbing repair, leakage, fittings and maintenance.</p>
+</div>
 
-    <div class="service">
-      <div class="icon">❄️</div>
-      <h3>AC Technician</h3>
-      <p>AC service, maintenance, installation and troubleshooting.</p>
-    </div>
+<div class="service">
+<div class="icon">❄️</div>
+<h3>AC Technician</h3>
+<p>AC service, installation, maintenance and troubleshooting.</p>
+</div>
 
-    <div class="service">
-      <div class="icon">☀️</div>
-      <h3>Solar Technician</h3>
-      <p>Solar system installation, maintenance and electrical support.</p>
-    </div>
+<div class="service">
+<div class="icon">☀️</div>
+<h3>Solar Technician</h3>
+<p>Solar installation, maintenance and electrical support.</p>
+</div>
 
-    <div class="service">
-      <div class="icon">🚗</div>
-      <h3>EV Charger</h3>
-      <p>Electric vehicle charger installation and electrical connection.</p>
-    </div>
+<div class="service">
+<div class="icon">🚗</div>
+<h3>EV Charger</h3>
+<p>Electric vehicle charger installation and connection.</p>
+</div>
 
-    <div class="service">
-      <div class="icon">🏠</div>
-      <h3>Home Maintenance</h3>
-      <p>General home repair and maintenance support for your property.</p>
-    </div>
+<div class="service">
+<div class="icon">🏠</div>
+<h3>Home Maintenance</h3>
+<p>General repair and maintenance support for your property.</p>
+</div>
 
-  </div>
+</div>
 </section>
 
 <section class="section">
 
-  <div class="area-box">
+<div class="area">
+<h2>Our Service Areas</h2>
+<p>Currently serving DHA Lahore.</p>
 
-    <h2>Serving DHA Lahore</h2>
-
-    <p>
-      Select your DHA phase and request the service you need.
-    </p>
-
-    <div class="phases">
-      <div class="phase">Phase 1</div>
-      <div class="phase">Phase 2</div>
-      <div class="phase">Phase 3</div>
-      <div class="phase">Phase 4</div>
-      <div class="phase">Phase 5</div>
-      <div class="phase">Phase 6</div>
-      <div class="phase">Phase 7</div>
-      <div class="phase">Phase 8</div>
-      <div class="phase">Phase 9</div>
-    </div>
-
-  </div>
+<div class="phases">
+<span class="phase">Phase 1</span>
+<span class="phase">Phase 2</span>
+<span class="phase">Phase 3</span>
+<span class="phase">Phase 4</span>
+<span class="phase">Phase 5</span>
+<span class="phase">Phase 6</span>
+<span class="phase">Phase 7</span>
+<span class="phase">Phase 8</span>
+<span class="phase">Phase 9</span>
+</div>
+</div>
 
 </section>
 
 <section class="section">
 
-  <div class="section-title">
-    <h2>How It Works</h2>
-    <p>Simple and easy service request.</p>
-  </div>
+<div class="title">
+<h2>How It Works</h2>
+<p>Simple steps to request a service.</p>
+</div>
 
-  <div class="steps">
+<div class="steps">
 
-    <div class="step">
-      <div class="number">1</div>
-      <h3>Select Service</h3>
-      <p>Choose the home service you need.</p>
-    </div>
+<div class="step">
+<div class="num">1</div>
+<h3>Choose Service</h3>
+<p>Select the service you need.</p>
+</div>
 
-    <div class="step">
-      <div class="number">2</div>
-      <h3>Select Your Area</h3>
-      <p>Choose your DHA phase in Lahore.</p>
-    </div>
+<div class="step">
+<div class="num">2</div>
+<h3>Select Area</h3>
+<p>Choose your DHA phase.</p>
+</div>
 
-    <div class="step">
-      <div class="number">3</div>
-      <h3>Contact Us</h3>
-      <p>Send your request through WhatsApp.</p>
-    </div>
+<div class="step">
+<div class="num">3</div>
+<h3>Contact Us</h3>
+<p>Send your request on WhatsApp.</p>
+</div>
 
-  </div>
-
+</div>
 </section>
 
 <section class="cta">
+<h2>Need a Home Service?</h2>
+<p>Contact Future Home Fix today.</p>
 
-  <h2>Need a Home Service?</h2>
-
-  <p>
-    Contact Future Home Fix and tell us what service you need.
-  </p>
-
-  <div class="buttons" style="justify-content:center">
-
-    <a class="btn btn-primary"
-       href="tel:+92XXXXXXXXXX">
-      Call Now
-    </a>
-
-    <a class="btn btn-green"
-       href="https://wa.me/92XXXXXXXXXX"
-       target="_blank">
-      WhatsApp Us
-    </a>
-
-  </div>
-
+<div class="buttons" style="justify-content:center">
+<a class="btn primary" href="tel:+92XXXXXXXXXX">📞 Call Now</a>
+<a class="btn green" href="https://wa.me/92XXXXXXXXXX" target="_blank">💬 WhatsApp</a>
+</div>
 </section>
 
 <footer>
-
-  <p>
-    © 2026 <strong>Future Home Fix</strong>
-  </p>
-
-  <p>
-    Home Services in Lahore
-  </p>
-
+<p>© 2026 <strong>Future Home Fix</strong></p>
+<p>Home Services in Lahore</p>
 </footer>
 
-<a class="whatsapp-float"
-   href="https://wa.me/92XXXXXXXXXX"
-   target="_blank"
-   aria-label="WhatsApp">
-  💬
-</a>
+<a class="float" href="https://wa.me/92XXXXXXXXXX" target="_blank">💬</a>
 
 <script>
+function sendWhatsApp(){
 
-function sendRequest(){
+let area=document.getElementById("areaSelect").value;
+let service=document.getElementById("serviceSelect").value;
+let name=document.getElementById("customerName").value;
 
-  const phase = document.getElementById("phase").value;
-  const service = document.getElementById("service").value;
-  const name = document.getElementById("name").value;
-
-  if(!phase || !service || !name){
-
-    alert("Please select your area, service and enter your name.");
-
-    return;
-  }
-
-  const message =
-    "Assalam-o-Alaikum Future Home Fix.%0A%0A" +
-    "Name: " + encodeURIComponent(name) + "%0A" +
-    "Area: " + encodeURIComponent(phase) + "%0A" +
-    "Service: " + encodeURIComponent(service);
-
-  window.open(
-    "https://wa.me/92XXXXXXXXXX?text=" + message,
-    "_blank"
-  );
+if(!area || !service || !name){
+alert("Please select your area, service and enter your name.");
+return;
 }
 
+let message=
+"Assalam-o-Alaikum Future Home Fix.%0A%0A"+
+"Name: "+encodeURIComponent(name)+"%0A"+
+"Area: "+encodeURIComponent(area)+"%0A"+
+"Service: "+encodeURIComponent(service);
+
+window.open("https://wa.me/92XXXXXXXXXX?text="+message,"_blank");
+}
 </script>
 
 </body>
