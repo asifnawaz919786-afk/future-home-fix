@@ -3,128 +3,637 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Future Home Fix | Home Services Lahore</title>
+
+<title>Future Home Fix | Home Services in Lahore</title>
+
+<meta name="description" content="Future Home Fix provides electrician, plumber, AC, solar, EV charger and home maintenance services in Lahore.">
+
+<meta name="theme-color" content="#0b5cff">
+
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,Helvetica,sans-serif;background:#f5f7fb;color:#172033}
-a{text-decoration:none}
-.header{background:linear-gradient(135deg,#0b63ce,#1688e8);color:white;padding:18px 20px 30px}
-.nav{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between}
-.logo{font-size:24px;font-weight:800}.tag{font-size:13px;opacity:.9}
-.hero{max-width:1100px;margin:32px auto 0;text-align:center}
-.hero h1{font-size:42px;line-height:1.1;margin-bottom:12px}
-.hero p{font-size:18px;opacity:.95;margin-bottom:24px}
-.badges{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
-.badge{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);padding:8px 13px;border-radius:30px;font-size:13px}
-.container{max-width:1100px;margin:auto;padding:30px 18px}
-.booking{background:white;border-radius:20px;padding:24px;box-shadow:0 10px 30px rgba(20,40,80,.08);margin-top:-5px}
-.booking h2{text-align:center;font-size:25px;margin-bottom:18px}
-.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-select{width:100%;padding:16px;border:1px solid #d9dee8;border-radius:12px;background:#fff;font-size:16px;color:#172033}
-.section-title{text-align:center;font-size:30px;margin:38px 0 20px}
-.services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.card{background:#fff;border-radius:18px;padding:24px 16px;text-align:center;box-shadow:0 7px 22px rgba(20,40,80,.07);transition:.2s;border:1px solid #eef1f6}
-.card:hover{transform:translateY(-3px)}
-.icon{font-size:42px;margin-bottom:12px}.card h3{font-size:19px;margin-bottom:7px}.card p{font-size:13px;color:#687386}
-.cta{margin:38px 0;background:#172033;color:#fff;border-radius:20px;padding:28px;text-align:center}
-.cta h2{font-size:27px;margin-bottom:8px}.cta p{color:#d7deea;margin-bottom:20px}
-.buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
-.btn{display:inline-block;padding:13px 22px;border-radius:10px;font-weight:700}
-.call{background:#1688e8;color:white}.whatsapp{background:#20b95a;color:white}
-.why{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.why div{background:white;padding:22px;border-radius:16px;text-align:center}.why b{display:block;font-size:17px;margin:9px 0}.why span{font-size:13px;color:#687386}
-.footer{background:#0d1422;color:#b9c2d1;text-align:center;padding:25px 15px;font-size:13px}
-@media(max-width:760px){
- .hero h1{font-size:32px}.fields{grid-template-columns:1fr}.services{grid-template-columns:repeat(2,1fr);gap:12px}
- .card{padding:20px 10px}.icon{font-size:36px}.why{grid-template-columns:1fr}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,Helvetica,sans-serif;
 }
-@media(max-width:430px){
- .services{grid-template-columns:1fr 1fr}.card h3{font-size:16px}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#f5f8fc;
+  color:#172033;
+  line-height:1.6;
+}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:#ffffff;
+  border-bottom:1px solid #e7edf5;
+}
+
+.nav{
+  max-width:1150px;
+  margin:auto;
+  padding:16px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:800;
+  color:#0b5cff;
+}
+
+.logo span{
+  color:#111827;
+}
+
+.nav a{
+  text-decoration:none;
+  color:#172033;
+  font-weight:600;
+}
+
+.hero{
+  background:
+    radial-gradient(circle at top right,#4f8cff 0,#1459df 35%,#071c49 100%);
+  color:white;
+  padding:75px 20px 65px;
+}
+
+.hero-inner{
+  max-width:1150px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1.3fr .7fr;
+  gap:40px;
+  align-items:center;
+}
+
+.badge{
+  display:inline-block;
+  background:rgba(255,255,255,.14);
+  border:1px solid rgba(255,255,255,.25);
+  padding:8px 14px;
+  border-radius:30px;
+  margin-bottom:18px;
+  font-size:14px;
+}
+
+.hero h1{
+  font-size:48px;
+  line-height:1.1;
+  margin-bottom:18px;
+}
+
+.hero p{
+  font-size:18px;
+  color:#e4edff;
+  max-width:650px;
+  margin-bottom:28px;
+}
+
+.buttons{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  display:inline-block;
+  text-decoration:none;
+  padding:13px 21px;
+  border-radius:10px;
+  font-weight:700;
+  border:0;
+  cursor:pointer;
+}
+
+.btn-primary{
+  background:white;
+  color:#0758df;
+}
+
+.btn-green{
+  background:#20c66b;
+  color:white;
+}
+
+.hero-card{
+  background:white;
+  color:#172033;
+  border-radius:22px;
+  padding:25px;
+  box-shadow:0 20px 50px rgba(0,0,0,.18);
+}
+
+.hero-card h3{
+  margin-bottom:16px;
+  font-size:21px;
+}
+
+.hero-card label{
+  display:block;
+  font-size:13px;
+  font-weight:700;
+  margin:12px 0 6px;
+}
+
+select,input{
+  width:100%;
+  padding:13px;
+  border:1px solid #dce3ed;
+  border-radius:9px;
+  background:#fff;
+  font-size:15px;
+}
+
+.hero-card button{
+  width:100%;
+  margin-top:16px;
+}
+
+.section{
+  max-width:1150px;
+  margin:auto;
+  padding:65px 20px;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:35px;
+}
+
+.section-title h2{
+  font-size:34px;
+  margin-bottom:8px;
+}
+
+.section-title p{
+  color:#657084;
+}
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.service{
+  background:white;
+  padding:25px;
+  border-radius:17px;
+  border:1px solid #e6ebf2;
+  transition:.25s;
+}
+
+.service:hover{
+  transform:translateY(-5px);
+  box-shadow:0 12px 30px rgba(18,50,90,.10);
+}
+
+.icon{
+  width:52px;
+  height:52px;
+  border-radius:14px;
+  background:#eaf2ff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:25px;
+  margin-bottom:16px;
+}
+
+.service h3{
+  margin-bottom:7px;
+}
+
+.service p{
+  color:#667085;
+  font-size:14px;
+}
+
+.area-box{
+  background:#071c49;
+  color:white;
+  border-radius:24px;
+  padding:45px 30px;
+  text-align:center;
+}
+
+.area-box h2{
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+.area-box p{
+  color:#d9e5ff;
+  margin-bottom:25px;
+}
+
+.phases{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.phase{
+  background:rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.18);
+  padding:9px 15px;
+  border-radius:30px;
+}
+
+.steps{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.step{
+  background:white;
+  padding:25px;
+  border-radius:16px;
+  text-align:center;
+  border:1px solid #e6ebf2;
+}
+
+.number{
+  width:45px;
+  height:45px;
+  margin:0 auto 15px;
+  border-radius:50%;
+  background:#0b5cff;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:800;
+}
+
+.cta{
+  background:linear-gradient(135deg,#0b5cff,#09378d);
+  color:white;
+  text-align:center;
+  padding:55px 20px;
+}
+
+.cta h2{
+  font-size:34px;
+  margin-bottom:10px;
+}
+
+.cta p{
+  margin-bottom:22px;
+  color:#dbe7ff;
+}
+
+footer{
+  background:#071326;
+  color:#b9c4d5;
+  padding:30px 20px;
+  text-align:center;
+}
+
+footer strong{
+  color:white;
+}
+
+.whatsapp-float{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  background:#20c66b;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  font-size:27px;
+  box-shadow:0 8px 25px rgba(0,0,0,.2);
+  z-index:2000;
+}
+
+@media(max-width:850px){
+  .hero-inner{
+    grid-template-columns:1fr;
+  }
+
+  .hero h1{
+    font-size:38px;
+  }
+
+  .services{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .steps{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:600px){
+  .nav{
+    padding:13px 15px;
+  }
+
+  .logo{
+    font-size:19px;
+  }
+
+  .hero{
+    padding:50px 16px;
+  }
+
+  .hero h1{
+    font-size:34px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  .section{
+    padding:48px 16px;
+  }
+
+  .section-title h2{
+    font-size:28px;
+  }
+
+  .services{
+    grid-template-columns:1fr;
+  }
+
+  .area-box{
+    padding:35px 20px;
+  }
 }
 </style>
 </head>
+
 <body>
 
-<header class="header">
-  <nav class="nav">
-    <div class="logo">Future Home Fix</div>
-    <div class="tag">Lahore Home Services</div>
-  </nav>
-  <div class="hero">
-    <h1>Reliable Home Services<br>At Your Doorstep</h1>
-    <p>Professional technicians for your home — fast, simple and convenient.</p>
-    <div class="badges">
-      <span class="badge">✓ Professional Service</span>
-      <span class="badge">✓ Lahore DHA</span>
-      <span class="badge">✓ Call / WhatsApp</span>
-    </div>
+<header>
+  <div class="nav">
+    <a href="#" class="logo">Future <span>Home Fix</span></a>
+    <a href="#services">Services</a>
   </div>
 </header>
 
-<main class="container">
-  <section class="booking">
-    <h2>What service do you need?</h2>
-    <div class="fields">
-      <select id="area">
-        <option value="">📍 Select DHA Phase</option>
-        <option>DHA Phase 1</option><option>DHA Phase 2</option>
-        <option>DHA Phase 3</option><option>DHA Phase 4</option>
-        <option>DHA Phase 5</option><option>DHA Phase 6</option>
-        <option>DHA Phase 7</option><option>DHA Phase 8</option>
+<section class="hero">
+  <div class="hero-inner">
+
+    <div>
+      <div class="badge">🏠 Home Services in Lahore</div>
+
+      <h1>Reliable Home Services At Your Doorstep</h1>
+
+      <p>
+        Electrician, plumber, AC, solar, EV charger and home maintenance
+        services for homes and businesses in Lahore.
+      </p>
+
+      <div class="buttons">
+        <a class="btn btn-primary" href="#booking">Book a Service</a>
+
+        <a class="btn btn-green"
+           href="https://wa.me/92XXXXXXXXXX"
+           target="_blank">
+          WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-card" id="booking">
+
+      <h3>Request a Service</h3>
+
+      <label>Select Area</label>
+      <select id="phase">
+        <option value="">Choose DHA Phase</option>
+        <option>DHA Phase 1</option>
+        <option>DHA Phase 2</option>
+        <option>DHA Phase 3</option>
+        <option>DHA Phase 4</option>
+        <option>DHA Phase 5</option>
+        <option>DHA Phase 6</option>
+        <option>DHA Phase 7</option>
+        <option>DHA Phase 8</option>
         <option>DHA Phase 9</option>
       </select>
+
+      <label>Select Service</label>
       <select id="service">
-        <option value="">🔧 Select Service</option>
-        <option>Electrician</option><option>Plumber</option>
-        <option>AC Technician</option><option>Solar Technician</option>
-        <option>EV Charger Installation</option><option>Home Maintenance</option>
+        <option value="">Choose Service</option>
+        <option>Electrician</option>
+        <option>Plumber</option>
+        <option>AC Technician</option>
+        <option>Solar Technician</option>
+        <option>EV Charger Installation</option>
+        <option>Home Maintenance</option>
       </select>
+
+      <label>Your Name</label>
+      <input id="name" type="text" placeholder="Enter your name">
+
+      <button class="btn btn-green" onclick="sendRequest()">
+        Send Request on WhatsApp
+      </button>
+
     </div>
-  </section>
 
-  <h2 class="section-title">Our Services</h2>
-  <section class="services">
-    <div class="card"><div class="icon">⚡</div><h3>Electrician</h3><p>Wiring, MCB, lights & electrical repair</p></div>
-    <div class="card"><div class="icon">🔧</div><h3>Plumber</h3><p>Water, leakage, pipe & plumbing work</p></div>
-    <div class="card"><div class="icon">❄️</div><h3>AC Technician</h3><p>AC service, repair & installation</p></div>
-    <div class="card"><div class="icon">☀️</div><h3>Solar Technician</h3><p>Solar installation & maintenance</p></div>
-    <div class="card"><div class="icon">🔋</div><h3>EV Charger</h3><p>Home EV charger installation</p></div>
-    <div class="card"><div class="icon">🏠</div><h3>Home Maintenance</h3><p>Reliable help for your home</p></div>
-  </section>
+  </div>
+</section>
 
-  <section class="cta">
-    <h2>Need a Technician?</h2>
-    <p>Select your area and service, then contact us directly.</p>
-    <div class="buttons">
-      <!-- Replace the number below with your own number -->
-      <a class="btn call" href="tel:+92XXXXXXXXXX">📞 Call Now</a>
-      <a class="btn whatsapp" href="https://wa.me/92XXXXXXXXXX">💬 WhatsApp</a>
+<section class="section" id="services">
+
+  <div class="section-title">
+    <h2>Our Services</h2>
+    <p>Professional solutions for your home and property.</p>
+  </div>
+
+  <div class="services">
+
+    <div class="service">
+      <div class="icon">⚡</div>
+      <h3>Electrician</h3>
+      <p>Electrical installation, repair, switches, breakers and wiring work.</p>
     </div>
-  </section>
 
-  <h2 class="section-title">Why Future Home Fix?</h2>
-  <section class="why">
-    <div><div style="font-size:30px">👨‍🔧</div><b>Professional Technicians</b><span>Quality-focused home service.</span></div>
-    <div><div style="font-size:30px">📍</div><b>DHA Lahore Coverage</b><span>Phase 1 to Phase 9.</span></div>
-    <div><div style="font-size:30px">📲</div><b>Easy Contact</b><span>Call or WhatsApp directly.</span></div>
-  </section>
-</main>
+    <div class="service">
+      <div class="icon">🔧</div>
+      <h3>Plumber</h3>
+      <p>Plumbing repair, leakage, fittings and general plumbing services.</p>
+    </div>
 
-<footer class="footer">
-  © 2026 Future Home Fix · Professional Home Services in Lahore
+    <div class="service">
+      <div class="icon">❄️</div>
+      <h3>AC Technician</h3>
+      <p>AC service, maintenance, installation and troubleshooting.</p>
+    </div>
+
+    <div class="service">
+      <div class="icon">☀️</div>
+      <h3>Solar Technician</h3>
+      <p>Solar system installation, maintenance and electrical support.</p>
+    </div>
+
+    <div class="service">
+      <div class="icon">🚗</div>
+      <h3>EV Charger</h3>
+      <p>Electric vehicle charger installation and electrical connection.</p>
+    </div>
+
+    <div class="service">
+      <div class="icon">🏠</div>
+      <h3>Home Maintenance</h3>
+      <p>General home repair and maintenance support for your property.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+
+  <div class="area-box">
+
+    <h2>Serving DHA Lahore</h2>
+
+    <p>
+      Select your DHA phase and request the service you need.
+    </p>
+
+    <div class="phases">
+      <div class="phase">Phase 1</div>
+      <div class="phase">Phase 2</div>
+      <div class="phase">Phase 3</div>
+      <div class="phase">Phase 4</div>
+      <div class="phase">Phase 5</div>
+      <div class="phase">Phase 6</div>
+      <div class="phase">Phase 7</div>
+      <div class="phase">Phase 8</div>
+      <div class="phase">Phase 9</div>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="section">
+
+  <div class="section-title">
+    <h2>How It Works</h2>
+    <p>Simple and easy service request.</p>
+  </div>
+
+  <div class="steps">
+
+    <div class="step">
+      <div class="number">1</div>
+      <h3>Select Service</h3>
+      <p>Choose the home service you need.</p>
+    </div>
+
+    <div class="step">
+      <div class="number">2</div>
+      <h3>Select Your Area</h3>
+      <p>Choose your DHA phase in Lahore.</p>
+    </div>
+
+    <div class="step">
+      <div class="number">3</div>
+      <h3>Contact Us</h3>
+      <p>Send your request through WhatsApp.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="cta">
+
+  <h2>Need a Home Service?</h2>
+
+  <p>
+    Contact Future Home Fix and tell us what service you need.
+  </p>
+
+  <div class="buttons" style="justify-content:center">
+
+    <a class="btn btn-primary"
+       href="tel:+92XXXXXXXXXX">
+      Call Now
+    </a>
+
+    <a class="btn btn-green"
+       href="https://wa.me/92XXXXXXXXXX"
+       target="_blank">
+      WhatsApp Us
+    </a>
+
+  </div>
+
+</section>
+
+<footer>
+
+  <p>
+    © 2026 <strong>Future Home Fix</strong>
+  </p>
+
+  <p>
+    Home Services in Lahore
+  </p>
+
 </footer>
 
+<a class="whatsapp-float"
+   href="https://wa.me/92XXXXXXXXXX"
+   target="_blank"
+   aria-label="WhatsApp">
+  💬
+</a>
+
 <script>
-const area=document.getElementById("area");
-const service=document.getElementById("service");
-function update(){
-  const a=area.value, s=service.value;
-  document.querySelector(".cta p").textContent =
-    a && s ? `${s} service requested in ${a}. Contact us below.` :
-    "Select your area and service, then contact us directly.";
+
+function sendRequest(){
+
+  const phase = document.getElementById("phase").value;
+  const service = document.getElementById("service").value;
+  const name = document.getElementById("name").value;
+
+  if(!phase || !service || !name){
+
+    alert("Please select your area, service and enter your name.");
+
+    return;
+  }
+
+  const message =
+    "Assalam-o-Alaikum Future Home Fix.%0A%0A" +
+    "Name: " + encodeURIComponent(name) + "%0A" +
+    "Area: " + encodeURIComponent(phase) + "%0A" +
+    "Service: " + encodeURIComponent(service);
+
+  window.open(
+    "https://wa.me/92XXXXXXXXXX?text=" + message,
+    "_blank"
+  );
 }
-area.addEventListener("change",update);
-service.addEventListener("change",update);
+
 </script>
+
 </body>
 </html>
