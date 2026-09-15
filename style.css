@@ -3,7 +3,7 @@ html,body{margin:0;padding:0}
 body{font-family:Arial,Helvetica,sans-serif;background:#f4f7fb;color:#10233f;min-height:100vh}
 .page{width:min(760px,100%);margin:0 auto;padding:10px 10px 16px}
 .top{background:#fff;border-radius:18px;padding:8px 10px 12px;text-align:center;box-shadow:0 7px 22px rgba(16,35,63,.09)}
-.logo{display:block;width:min(280px,78vw);height:auto;max-height:125px;object-fit:contain;margin:0 auto;position:static;transform:none}
+.logo{display:block;width:min(360px);height:auto;max-height:125px;object-fit:contain;margin:0 auto;position:static;transform:none}
 .label{display:inline-block;margin-top:3px;padding:7px 18px;border-radius:999px;background:#102d53;color:#fff;font-size:15px;font-weight:800;letter-spacing:.2px}
 .services{margin-top:10px}
 .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
@@ -19,7 +19,7 @@ footer{text-align:center;font-size:10px;color:#7b899b;margin-top:9px}
 @media(max-width:420px){
   .page{padding:7px 7px 12px}
   .top{padding:5px 7px 9px;border-radius:15px}
-  .logo{width:min(245px,80vw);max-height:105px}
+  .logo{320px,85vw);max-height:125px}
   .label{font-size:13px;padding:6px 15px}
   .service-grid{gap:7px}
   .service-card{min-height:108px;padding:9px 4px;border-radius:12px}
