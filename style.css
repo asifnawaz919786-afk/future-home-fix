@@ -28,3 +28,8 @@ footer{text-align:center;font-size:10px;color:#7b899b;margin-top:9px}
   .service-card p{font-size:8px}
   .btn{min-height:45px;font-size:14px}
 }
+footer{
+  padding:18px 10px;
+  line-height:1.5;
+  font-size:14px;
+}
