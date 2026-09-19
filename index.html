@@ -1,68 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Future Home Fix | Home Services in Lahore DHA</title>
-  <meta name="description" content="Future Home Fix provides professional electrician, plumber, AC service, solar, EV charger and home maintenance services in Lahore DHA.">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Future Home Fix | Home Services • DHA Lahore</title>
+
+<meta name="description" content="Future Home Fix provides professional Electrician, Plumber, AC Service, Solar, EV Charger and Home Maintenance services in DHA Lahore.">
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#eef7ff;
+  color:#102d55;
+}
+
+.page{
+  width:100%;
+  max-width:1100px;
+  margin:auto;
+  background:#fff;
+  overflow:hidden;
+}
+
+/* HEADER */
+.top{
+  text-align:center;
+  padding:18px 15px 25px;
+  background:#fff;
+}
+
+.top img{
+  width:100%;
+  max-width:850px;
+  height:auto;
+  display:block;
+  margin:auto;
+}
+
+.label{
+  display:inline-block;
+  margin-top:15px;
+  padding:13px 32px;
+  border-radius:40px;
+  background:#123b70;
+  color:#fff;
+  font-size:25px;
+  font-weight:800;
+  box-shadow:0 5px 15px rgba(0,0,0,.12);
+}
+
+/* SERVICES */
+.services{
+  padding:20px 22px 35px;
+  background:linear-gradient(#fff,#f1f9ff);
+}
+
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+
+.service-card{
+  background:#fff;
+  border:1px solid #e1ebf5;
+  border-radius:22px;
+  padding:25px 15px;
+  text-align:center;
+  min-height:230px;
+  box-shadow:0 8px 22px rgba(20,70,120,.09);
+}
+
+.icon{
+  width:75px;
+  height:75px;
+  margin:0 auto 14px;
+  border-radius:50%;
+  background:#eaf4ff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:43px;
+}
+
+.service-card h2{
+  font-size:25px;
+  margin-bottom:12px;
+  color:#123b70;
+}
+
+.service-card p{
+  color:#667891;
+  font-size:17px;
+  line-height:1.5;
+}
+
+/* CONTACT */
+.contact-section{
+  padding:25px 22px 35px;
+  background:#f3faff;
+}
+
+.contact-card{
+  background:#fff;
+  border-radius:25px;
+  padding:32px;
+  box-shadow:0 10px 30px rgba(20,70,120,.10);
+  border:1px solid #e2edf8;
+}
+
+.contact-title{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  margin-bottom:22px;
+}
+
+.location-icon{
+  width:62px;
+  height:62px;
+  border-radius:50%;
+  background:#1674dc;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:32px;
+}
+
+.contact-title h2{
+  font-size:38px;
+  color:#102d55;
+}
+
+.location-box{
+  background:#e6f3ff;
+  border-radius:18px;
+  padding:18px 22px;
+  font-size:22px;
+  font-weight:700;
+  color:#123b70;
+  margin-bottom:20px;
+}
+
+.contact-text{
+  font-size:20px;
+  line-height:1.5;
+  color:#48617d;
+  margin-bottom:22px;
+}
+
+/* WHATSAPP */
+.whatsapp-btn{
+  display:block;
+  width:100%;
+  max-width:620px;
+  text-align:center;
+  text-decoration:none;
+  background:#16c765;
+  color:#fff;
+  padding:17px 20px;
+  border-radius:50px;
+  font-size:22px;
+  font-weight:800;
+  box-shadow:0 8px 18px rgba(22,199,101,.25);
+}
+
+.whatsapp-btn:hover{
+  opacity:.92;
+}
+
+/* FOOTER */
+footer{
+  background:#123b70;
+  color:#fff;
+  text-align:center;
+  padding:25px 15px;
+  font-size:17px;
+}
+
+/* MOBILE */
+@media(max-width:700px){
+
+  .top{
+    padding:12px 10px 20px;
+  }
+
+  .label{
+    font-size:21px;
+    padding:11px 25px;
+  }
+
+  .services{
+    padding:15px 14px 25px;
+  }
+
+  .service-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
+  }
+
+  .service-card{
+    min-height:190px;
+    padding:18px 8px;
+    border-radius:18px;
+  }
+
+  .icon{
+    width:58px;
+    height:58px;
+    font-size:32px;
+  }
+
+  .service-card h2{
+    font-size:18px;
+  }
+
+  .service-card p{
+    font-size:14px;
+  }
+
+  .contact-section{
+    padding:15px 12px 25px;
+  }
+
+  .contact-card{
+    padding:22px 16px;
+    border-radius:20px;
+  }
+
+  .contact-title{
+    gap:10px;
+  }
+
+  .location-icon{
+    width:50px;
+    height:50px;
+    font-size:25px;
+  }
+
+  .contact-title h2{
+    font-size:27px;
+  }
+
+  .location-box{
+    font-size:17px;
+    padding:15px;
+  }
+
+  .contact-text{
+    font-size:17px;
+  }
+
+  .whatsapp-btn{
+    font-size:18px;
+    padding:15px 10px;
+  }
+
+  footer{
+    font-size:14px;
+  }
+}
+</style>
 </head>
+
 <body>
-  <main class="page">
-    <header class="top">
-      <img src="logo.png" alt="Future Home Fix" class="logo">
-      <div class="label">Services • DHA</div>
-    </header>
 
-    <section class="services" aria-label="Services">
-      <div class="service-grid">
-        <article class="service-card">
-          <div class="icon">⚡</div>
-          <h2>Electrician</h2>
-          <p>Wiring & repairs<br>Home electrical work</p>
-        </article>
-        <article class="service-card">
-          <div class="icon">🔧</div>
-          <h2>Plumber</h2>
-          <p>Leaks & pipe work<br>Fittings & repairs</p>
-        </article>
-        <article class="service-card">
-          <div class="icon">❄️</div>
-          <h2>AC Service</h2>
-          <p>AC service & repair<br>Installation support</p>
-        </article>
-        <article class="service-card">
-          <div class="icon">☀️</div>
-          <h2>Solar</h2>
-          <p>Solar installation<br>Maintenance & support</p>
-        </article>
-        <article class="service-card">
-          <div class="icon">🔋</div>
-          <h2>EV Charger</h2>
-          <p>Home charger setup<br>Installation service</p>
-        </article>
-        <article class="service-card">
-          <div class="icon">🏠</div>
-          <h2>Home Maintenance</h2>
-          <p>General home repairs<br>Maintenance support</p>
-        </article>
-      </div>
-    </section>
-<section class="contact-location">
-  <h2>Contact Future Home Fix</h2>
+<main class="page">
 
-  <p>📍 Jummo Stop, Bedian Road, DHA Lahore</p>
+<!-- HEADER -->
+<header class="top">
 
-  <p>Apna masla batayein aur WhatsApp par apni location share karein.</p>
+  <img src="logo.png" alt="Future Home Fix">
 
-  <a class="contact-btn whatsapp"
-     href="https://wa.me/923161110946?text=Assalam-o-Alaikum%20Future%20Home%20Fix%2C%20mera%20masla%20hai%3A%20%0A%0AMeri%20location%20WhatsApp%20par%20share%20kar%20raha%20hun."
-     target="_blank">
-    💬 WhatsApp & Share Location
-  </a>
+  <div class="label">
+    Services • DHA
+  </div>
+
+</header>
+
+
+<!-- SERVICES -->
+<section class="services">
+
+  <div class="service-grid">
+
+    <article class="service-card">
+      <div class="icon">⚡</div>
+      <h2>Electrician</h2>
+      <p>Wiring & repairs<br>Home electrical work</p>
+    </article>
+
+    <article class="service-card">
+      <div class="icon">🔧</div>
+      <h2>Plumber</h2>
+      <p>Leaks & pipe work<br>Fittings & repairs</p>
+    </article>
+
+    <article class="service-card">
+      <div class="icon">❄️</div>
+      <h2>AC Service</h2>
+      <p>AC service & repair<br>Installation support</p>
+    </article>
+
+    <article class="service-card">
+      <div class="icon">☀️</div>
+      <h2>Solar</h2>
+      <p>Solar installation<br>Maintenance & support</p>
+    </article>
+
+    <article class="service-card">
+      <div class="icon">🔋</div>
+      <h2>EV Charger</h2>
+      <p>Home charger setup<br>Installation service</p>
+    </article>
+
+    <article class="service-card">
+      <div class="icon">🏠</div>
+      <h2>Home Maintenance</h2>
+      <p>General home repairs<br>Maintenance support</p>
+    </article>
+
+  </div>
+
 </section>
 
-<footer>Future Home Fix • Jummo Stop, Bedian Road, DHA Lahore</footer>
+
+<!-- CONTACT -->
+<section class="contact-section">
+
+  <div class="contact-card">
+
+    <div class="contact-title">
+      <div class="location-icon">📍</div>
+      <h2>Contact Future Home Fix</h2>
+    </div>
+
+    <div class="location-box">
+      📍 Jummo Stop, Bedian Road, DHA Lahore
+    </div>
+
+    <p class="contact-text">
+      Apna masla batayein aur WhatsApp par apni location share karein.
+    </p>
+
+    <a
+      class="whatsapp-btn"
+      href="https://wa.me/923161110946?text=Assalam-o-Alaikum%20Future%20Home%20Fix%2C%20mera%20masla%20hai%3A%20%0A%0AMeri%20location%3A"
+      target="_blank">
+      💬 WhatsApp & Share Location
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+  Future Home Fix &nbsp; • &nbsp;
+  Jummo Stop, Bedian Road, DHA Lahore
+</footer>
+
 </main>
+
 </body>
 </html>
