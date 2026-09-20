@@ -14,7 +14,18 @@ body{font-family:Arial,Helvetica,sans-serif;background:#f4f7fb;color:#10233f;min
 .contact{display:flex;gap:9px;margin-top:10px}
 .btn{flex:1;min-height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:16px;font-weight:800}
 .whatsapp{background:#20c866;color:#fff}
-.call{background:#102d53;color:#fff}
+.call-btn{
+  background:#102d53;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  min-height:48px;
+  border-radius:30px;
+  font-size:16px;
+  font-weight:bold;
+}
 footer{text-align:center;font-size:10px;color:#7b899b;margin-top:9px}
 @media(max-width:420px){
   .page{padding:7px 7px 12px}
