@@ -1,6 +1,19 @@
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
 body{font-family:Arial,Helvetica,sans-serif;background:#f4f7fb;color:#10233f;min-height:100vh}
+.call-btn{
+  background:#102d53 !important;
+  color:#fff !important;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  min-height:48px;
+  border-radius:30px;
+  font-size:16px;
+  font-weight:bold;
+  width:100%;
+}
 .page{width:min(760px,100%);margin:0 auto;padding:10px 10px 16px}
 .top{background:#fff;border-radius:18px;padding:8px 10px 12px;text-align:center;box-shadow:0 7px 22px rgba(16,35,63,.09)}
 .logo{display:block;width:min(360px);height:auto;max-height:125px;object-fit:contain;margin:0 auto;position:static;transform:none}
